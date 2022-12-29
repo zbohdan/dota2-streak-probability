@@ -1,6 +1,6 @@
 <h2>Рассчёт вероятности заданого луз стрика при проценте побед: 50%</h2>
 
-<p>Введите число игр:</p>
+<p>Введите общее число игр:</p>
 <input [(ngModel)]="gamesCount" type="number">
 
 <p>Введите колличество игр в луз стрике:</p>
@@ -9,3 +9,7 @@
 <button (click)="calculateProbability(streakValue, gamesCount)">Рассчитать</button>
 
 <p *ngIf="isCalculated">Вероятность луз стрика: <b>{{probability}}</b> %</p>
+
+<!--<button (click)="showExplanatoryBrigade()">Пояснительная бригада</button>-->
+
+<!--<div *ngIf="shouldShowExplanatoryBrigade"></div>-->

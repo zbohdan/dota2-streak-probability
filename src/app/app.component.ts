@@ -13,9 +13,12 @@ export class AppComponent {
   probability: number | null = null;
   probabilityDisplay = '';
   isCalculated = false;
-
-  constructor() {
-  }
+  // shouldShowExplanatoryBrigade = false;
+  //
+  //
+  // showExplanatoryBrigade() {
+  //   this.shouldShowExplanatoryBrigade = true
+  // }
 
   calculateProbabilityOfTaskFromWikipedia(sequenceLength: bigint, experimentsCount: bigint): BigDecimal {
     const fKth = this.calculateKthElementOfTheNNacciSequence(sequenceLength, experimentsCount);
